@@ -1,0 +1,80 @@
+# ======================== Init al folder =============================
+$ git init
+
+$ git config --global user.email "wwwdeveloperman@gmail.com"
+
+$ git config --global user.name "developerman"
+
+# ===================== Git Add ================================================
+$ git status 
+$ ls -l ->   No muestra la carpeta oculta .git
+
+$ git add index.html app.js 
+$ git status 
+
+->
+Changes to be commited:
+(use "git rm --cached <file>..." to unstage
+  app.js 
+  index.html 
+Untracked files:
+  otros.any 
+
+# =========================== Git Commit =========================================
+
+
+$ git commit  ( Fallo la edicion con vis studio code, cerre el editor p continuar)
+  con git. y me dio opcion a este comando:
+
+$git commit -m "probando git"    # agrega mensaje.
+
+$ git log               <---------  Ver el log de commits.
+$ git status 
+
+
+
+# ====================== Regresar a un commit ============================ 
+#                     Git Checkout 
+
+... cambiar un file como app.js y retroceder
+$git status 
+-->  se ve app.js como modified.
+
+$ git checkout -- app.js     (dejar espacio)
+... regresa al ultimo commit.
+
+
+
+# =============== Ver las diferencias con el ultimo commit ====================
+
+$git status 
+  ->   modified:  style.css 
+
+$git diff style.css
+... mostrara las diferencias c el ultimo commit.
+$ git add style.css 
+$ git status     ... aparece en verde como modified.
+$ git commit -m "agregado unos estilos v2."  
+$ git log       <------ revisar commits.
+
+    ..{   los ultimos commits aparecen arriba.
+
+    Author: developerman <wwwdeveloperman@gmail.com>
+      Date:   Mon Nov 26 09:59:02 2018 -0400
+      
+          agregado estilos v2.
+    .. }
+    
+    
+
+
+
+ 
+
+
+
+
+
+
+
+end.
